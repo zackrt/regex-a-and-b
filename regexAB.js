@@ -13,7 +13,7 @@
 // Output:"true"
 
 function ABCheck(str) {
-    return str.match(/a...b/g) != null;
+    return (/[a]...[b]/).test(str);
 }
 
 console.log(ABCheck("after badly"))
